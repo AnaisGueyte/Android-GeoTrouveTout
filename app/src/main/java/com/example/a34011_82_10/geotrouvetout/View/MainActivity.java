@@ -2,7 +2,7 @@ package com.example.a34011_82_10.geotrouvetout.View;
 
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,7 +11,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.a34011_82_10.geotrouvetout.Controller.RestConnexion;
+//import com.example.a34011_82_10.geotrouvetout.Controller.RestConnexion;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.a34011_82_10.geotrouvetout.R;
 
 import org.json.JSONException;
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<HashMap<String, String>> contactList;
 
     // To show info into a bubble during the connection
-    private static final String TAG = RestConnexion.class.getSimpleName();
+    //private static final String TAG = RestConnexion.class.getSimpleName();
 
 
     @Override

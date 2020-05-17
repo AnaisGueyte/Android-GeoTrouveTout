@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "24.0.3"
+    compileSdkVersion 29
+    buildToolsVersion '24.0.3'
     defaultConfig {
         applicationId "com.example.a34011_82_10.geotrouvetout"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -17,6 +18,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+}
+
+repositories {
+    mavenCentral()
+    google()
 }
 
 dependencies {
@@ -24,9 +31,19 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.0.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:gridlayout-v7:29.0.0'
+    implementation "androidx.gridlayout:gridlayout:1.0.0"
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+
+    //noinspection GradleCompatible
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:gridlayout-v7:25.0.0'
-    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
-    compile 'com.google.code.gson:gson:2.2.4'
+    //noinspection GradleCompatible
+    compile 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 }

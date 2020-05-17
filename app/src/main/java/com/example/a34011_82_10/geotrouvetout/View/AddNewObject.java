@@ -53,24 +53,11 @@ public class AddNewObject extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.addobject);
 
+        //***************** FIRST PART: SHOW STEPS OPTIONS ***************** //
 
-        // Instructions to get the GPS location
-        // Obviously not working now
+        //*** ADD IMAGE **** //
 
-        mlocation = (Button) findViewById(R.id.blocation);
-        mlocation.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                String text = "TEST";
-                myLocation = text;
-            }
-        });
-
-
-        // Onclick of the addpicture button, get permission to access picture/camera
-        // Obviously not working neither.
+        // Onclick of the Picture button, get permission to access picture/camera
 
         mpicture = (ImageButton) findViewById(R.id.bpicture);
         mpicture.setImageResource(R.drawable.addphoto);
@@ -88,7 +75,7 @@ public class AddNewObject extends Activity {
 
         //***************** SAVING THE NEW OBJECT ***************** //
 
-        bsave = (Button) findViewById(R.id.bsave);
+        bsave = (Button) findViewById(R.id.bpicture);
 
         bsave.setOnClickListener(new View.OnClickListener() {
 

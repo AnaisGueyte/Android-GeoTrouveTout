@@ -10,40 +10,67 @@
     tools:context=".View.MainView">
 
     <TextView
-        android:text="The main view"
+        android:id="@+id/step1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_weight="0.18"
-        android:textAlignment="center" />
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        app:layout_column="0"
+        app:layout_row="0"
+        android:text="STEP 1 of 3"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <TextView
+            android:id="@+id/addPhotoText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.38"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text=""
+            android:textSize="32sp"
+            app:layout_column="0"
+            app:layout_row="0" />
 
 
-    <ListView
-        android:id="@+id/List"
-        android:layout_width="match_parent"
-        android:layout_height="299dp"
-        android:layout_weight="0.80" />
+    </GridLayout>
 
-    <android.support.v7.widget.GridLayout
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="100dp">
 
         <ImageButton
-            android:layout_width="190dp"
-            android:layout_height="60dp"
+            android:id="@+id/takephoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/addphoto"
+            android:background="@drawable/roundcorner"/>
+
+        <ImageButton
+            android:id="@+id/uploadphoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="60dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_column="2"
+            app:layout_row="0"
             app:srcCompat="@drawable/fab"
-            android:id="@+id/addobject"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp" />
-
-        <ImageButton
-            android:layout_width="190dp"
-            android:layout_height="60dp"
-            app:srcCompat="@drawable/location"
-            android:id="@+id/checkmap"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"/>
-    </android.support.v7.widget.GridLayout>
-
+            android:background="@drawable/roundcorner"/>
+    </GridLayout>
 
 </LinearLayout>

@@ -128,7 +128,7 @@ public class LocationView extends AppCompatActivity {
 
 
         // Initialize the SDK
-        Places.initialize(getApplicationContext(), "AIzaSyDyMVo--XksDQwXhq0iS-AH19t5qLk7YDY");
+        Places.initialize(getApplicationContext(), "");
 
         // Create a new Places client instance
         PlacesClient placesClient = Places.createClient(this);

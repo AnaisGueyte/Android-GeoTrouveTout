@@ -1,3 +1,4 @@
+/*
 package com.example.a34011_82_10.geotrouvetout.View;
 
 import android.app.Activity;
@@ -9,9 +10,11 @@ import android.widget.TextView;
 
 import com.example.a34011_82_10.geotrouvetout.R;
 
+*/
 /**
  * Created by 34011-82-10 on 02/11/2016.
- */
+ *//*
+
 
 public class SignUpConfirm extends Activity {
 
@@ -30,7 +33,7 @@ public class SignUpConfirm extends Activity {
         TextView mTextView = (TextView) findViewById(R.id.hello);
         String mString = "Hello " + monText + ", \n \n Let's register you to his amazing app !";
         mTextView.setText(mString);
-
+a
         Button bplay = (Button)findViewById(R.id.button);
 
         bplay.setOnClickListener(new View.OnClickListener()
@@ -47,3 +50,4 @@ public class SignUpConfirm extends Activity {
 }
 
 
+*/

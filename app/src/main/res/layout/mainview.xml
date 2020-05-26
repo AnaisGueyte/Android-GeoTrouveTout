@@ -39,7 +39,6 @@
             app:layout_column="0"
             app:layout_row="0" />
 
-
     </GridLayout>
 
     <GridLayout
@@ -56,8 +55,9 @@
             android:layout_marginEnd="20dp"
             app:layout_column="0"
             app:layout_row="0"
-            app:srcCompat="@drawable/addphoto"
-            android:background="@drawable/roundcorner"/>
+            app:srcCompat="@drawable/photo_camera"
+            android:background="@drawable/roundcorner"
+            android:textColor="#fff"/>
 
         <ImageButton
             android:id="@+id/uploadphoto"
@@ -69,8 +69,9 @@
             android:paddingRight="15dp"
             app:layout_column="2"
             app:layout_row="0"
-            app:srcCompat="@drawable/fab"
-            android:background="@drawable/roundcorner"/>
+            app:srcCompat="@drawable/insertphoto"
+            android:background="@drawable/roundcorner"
+            android:textColor="#fff"/>
     </GridLayout>
 
 </LinearLayout>

@@ -1,3 +1,4 @@
+/*
 package com.example.a34011_82_10.geotrouvetout.View;
 
 import android.app.Activity;
@@ -232,3 +233,4 @@ public class AddNewObject extends Activity {
     }
     // END OF ASYNCTASK
 }
+*/

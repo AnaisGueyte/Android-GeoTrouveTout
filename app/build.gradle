@@ -22,8 +22,8 @@ android {
 }
 
 repositories {
-    mavenCentral()
     google()
+    mavenCentral()
 }
 
 dependencies {
@@ -31,6 +31,8 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    implementation 'com.google.android.libraries.places:places:2.2.0'
 
     //noinspection GradleCompatible
     implementation 'com.android.support:gridlayout-v7:29.0.0'
@@ -44,6 +46,12 @@ dependencies {
     compile 'com.android.support.test.espresso:espresso-core:3.0.2'
     compile 'com.google.code.gson:gson:2.8.5'
 
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.firebase:firebase-core:17.4.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.7'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+
+
 }

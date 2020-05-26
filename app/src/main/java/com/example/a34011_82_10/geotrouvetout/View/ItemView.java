@@ -1,3 +1,4 @@
+/*
 package com.example.a34011_82_10.geotrouvetout.View;
 
 import android.app.Activity;
@@ -16,9 +17,11 @@ import org.json.JSONObject;
 
 import java.util.concurrent.ExecutionException;
 
+*/
 /**
  * This class will display the whole item
- */
+ *//*
+
 
 public class ItemView extends Activity {
 
@@ -143,3 +146,4 @@ public class ItemView extends Activity {
         }
     }
 }
+*/

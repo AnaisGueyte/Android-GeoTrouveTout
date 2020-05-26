@@ -1,3 +1,4 @@
+/*
 package com.example.a34011_82_10.geotrouvetout.View;
 
 import android.app.Activity;
@@ -99,4 +100,4 @@ public class SignUP extends Activity {
         // End of the SignUp OnClick instructions
 
     }
-}
+}*/

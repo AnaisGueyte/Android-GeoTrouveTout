@@ -1,3 +1,4 @@
+/*
 package com.example.a34011_82_10.geotrouvetout.View;
 
 import android.content.Intent;
@@ -217,3 +218,4 @@ public class MainActivity extends AppCompatActivity {
 
 }
 
+*/
